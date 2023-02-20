@@ -1,0 +1,24 @@
+@mixin koreanfont24 {
+    font-family: $nato;
+    font-size: 24px;
+    font-weight: 400;
+    color: #8D9598;
+    opacity: 80%;
+    
+}
+
+@mixin darkblueH3 {
+    font-family: $playfr;
+    font-size: 48px;
+    font-weight: bold;
+    color: #14395B;
+}
+
+@mixin smalfont20px {
+    font-size: $font20;
+    font-weight:bold;
+    font-family: $nato;
+    line-height: 27px;
+    color: #14395B;
+    opacity: 80%;
+}
