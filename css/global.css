@@ -57,132 +57,89 @@ a {
   text-decoration: none;
 }
 
-body {
-  max-width: 1990px;
+.container-1 {
+  max-width: 1900px;
   width: 100%;
-  margin: 25px 60px;
+  padding: 20px;
+  margin: 0 auto;
+  display: inline-block;
 }
-body button {
-  background-color: #186AA5;
-  cursor: pointer;
+.container-1 .navbar {
+  width: 100%;
 }
-body button:hover {
-  background-color: #2289FF;
+.container-1 .navbar .navbar-brand {
+  padding-top: 25px;
+  padding-left: 50px;
+  margin-right: 200px;
+}
+.container-1 .navbar .navbar-brand img {
+  width: 300px;
+  height: 80px;
+}
+.container-1 .navbar .collapse .nav-item {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-right: 70px;
+}
+.container-1 .navbar .collapse .nav-item .active-page {
+  color: #2289FF;
+}
+.container-1 .navbar .collapse .nav-item .dropdown-menu {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 10px;
+  background-color: lightsteelblue;
+}
+.container-1 .navbar .collapse .geolab-dive {
+  display: inline-block;
+  margin-right: 50px;
+}
+.container-1 .navbar .collapse .geolab-dive .geolab {
+  width: 100px;
+  height: 100px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 30px 50px;
-}
-header .geolab {
-  position: absolute;
-  top: 50px;
-  right: 1000px;
-  z-index: 5;
-}
-header .geolab a img {
-  width: 100px;
-  height: 100px;
   -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.33);
   border-radius: 30%;
   background-color: rgba(217, 151, 168, 0.486);
 }
-header .geolab a img:hover {
+.container-1 .navbar .collapse .geolab-dive .geolab:hover {
   background-color: rgba(143, 211, 233, 0.473);
 }
-header .logo {
-  cursor: pointer;
-  margin-right: 200px;
+.container-1 .navbar .collapse .geolab-dive .animate__animated {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
-header nav {
-  margin-right: 500px;
-}
-header .navlinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-header .navlinks li a {
-  color: black;
-}
-header nav, header .navlinks > li {
-  display: inline-block;
+.container-1 .navbar .collapse .d-flex input {
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
-  padding: 0 20px;
+  border-radius: 20px;
 }
-header nav a:hover, header .navlinks > li a:hover {
-  color: #2289FF;
+.container-1 .navbar .collapse .d-flex .div-bell {
+  margin: 0 40px;
+  cursor: pointer;
+}
+.container-1 .navbar .collapse .d-flex button {
+  width: 180px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  background-color: #186AA5;
+  cursor: pointer;
+}
+.container-1 .navbar .collapse .d-flex button a {
+  color: white;
+}
+.container-1 .navbar .collapse .d-flex button:hover {
+  background-color: #2289FF;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-}
-header a > button {
-  padding: 15px 60px;
-  border-radius: 8px;
-  border: none;
-  margin-left: 40px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}
-header .bell {
-  margin-right: 40px;
-  margin-left: 25px;
-}
-header .nav2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header .iconplus {
-  border: 3px dashed #707070;
-  border-radius: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header .iconplus a i {
-  font-size: 30px;
-  color: black;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-header .iconplus input {
-  margin-top: 10px;
-  height: 50px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 20px;
-  border-style: none;
-  border-color: transparent;
-  outline: none;
-  background-image: url(../images/search.svg);
-  background-repeat: no-repeat;
-  background-position: 20px 15px;
-  padding-left: 20px;
-}
-header .iconplus input:focus {
-  background-image: none;
-}
-header .iconplus input:active {
-  background-image: none;
 }
 
 section {
@@ -328,9 +285,21 @@ section .box .last a button {
   border-style: none;
 }
 
+button {
+  background-color: #186AA5;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2289FF;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
 .section2 {
-  width: 1990px;
-  margin-top: 55%;
+  max-width: 1990px;
+  width: 100%;
+  margin-top: 1100px;
   text-align: center;
 }
 .section2 .head span {
@@ -770,6 +739,7 @@ section .box .last a button {
   font-weight: bold;
   color: #14395B;
   margin-bottom: 70px;
+  text-align: center;
 }
 .section6 .last-cards {
   display: -webkit-box;
@@ -779,48 +749,37 @@ section .box .last a button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 60%;
   margin: 0 auto;
-  width: 1250px;
-  height: 700px;
 }
-.section6 .last-cards div {
-  width: 1250px;
-  height: 100px;
+.section6 .last-cards .accordion-item {
   -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.33);
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-color: #186AA5;
+  margin-bottom: 10px;
 }
-.section6 .last-cards div h4 {
+.section6 .last-cards .accordion-item h4 {
   font-size: 20px;
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
   line-height: 27px;
   color: #14395B;
   opacity: 80%;
-  text-align: left;
-  margin-left: 50px;
 }
-.section6 .last-cards div i {
-  margin-right: 30px;
-  font-size: 50px;
+.section6 .last-cards .accordion-item .accordion-button {
+  height: 60x;
+}
+.section6 .last-cards .accordion-item .accordion-button:hover {
+  background-color: transparent;
+}
+.section6 .last-cards .accordion-item .accordion-body p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   color: #8D9598;
-  font-weight: bold;
-  cursor: pointer;
-}
-.section6 .last-cards div i:hover {
-  color: #2289FF;
+  opacity: 80%;
+  font-size: 22px;
 }
 
 footer div {
@@ -1127,6 +1086,17 @@ footer .footer-bottom h3 {
 .contac-body {
   background: url(../images/town.jpg);
   background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+.contac-body::after {
+  content: "";
+  position: absolute;
+  z-index: -5;
+  inset: 0;
+  background: rgb(75, 64, 66);
+  opacity: 0.4;
 }
 
 .contact {
