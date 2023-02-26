@@ -961,11 +961,6 @@ button:hover {
   cursor: pointer;
 }
 
-.sticky-footer {
-  position: absolute;
-  bottom: 10;
-}
-
 .body-color {
   background-image: url(../images/backg.jpg);
   background-repeat: no-repeat;
